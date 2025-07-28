@@ -82,7 +82,7 @@
       </Carousel>
     </div>
 
-    <GameResult 
+    <ResultReveal 
       v-if="gameResult"
       :result="gameResult" 
       :onReset="resetGame"
@@ -95,7 +95,7 @@
 <script setup>
 import { ref, computed, nextTick } from 'vue'
 import InputGroup from './InputGroup.vue'
-import GameResult from './GameResult.vue'
+import ResultReveal from './ResultReveal.vue'
 import Carousel from './Carousel.vue'
 import Tutorial from './Tutorial.vue'
 

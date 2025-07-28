@@ -109,7 +109,7 @@ describe('MashGame.vue', () => {
     component.playGame()
     await wrapper.vm.$nextTick()
     
-    expect(wrapper.findComponent({ name: 'GameResult' }).exists()).toBe(true)
+    expect(wrapper.findComponent({ name: 'ResultReveal' }).exists()).toBe(true)
     expect(wrapper.find('.input-section').exists()).toBe(false)
   })
 
