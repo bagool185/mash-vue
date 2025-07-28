@@ -26,21 +26,31 @@ npm run test
 npm run build
 ```
 
-## GitHub Pages Deployment
+## Folllow up questions
 
-### Automatic Deployment
-1. Push to the `main` branch
-2. GitHub Actions will automatically build and deploy to GitHub Pages
-3. Enable GitHub Pages in repository settings (Source: GitHub Actions)
+### What additional features or improvements could be added to enhance the game experience?
 
-### Manual Deployment
-```bash
-# Build for production
-NODE_ENV=production npm run build
+- multiplayer mode: multiple players could fill in the sections at the same time and compare results, or get mixed results depending on the other players' choices
 
-# Deploy to gh-pages branch (requires gh-pages package)
-npm install -g gh-pages
-gh-pages -d dist
-```
+- saving game history
 
-The app will be available at: `https://bagool185.github.io/mash-vue/`
+### How could AI be leveraged to make the game more engaging or personalized?
+
+- smart auto complete / auto suggestions
+- contextual suggestions based on the user's other suggestions
+- generate more complex narratives based on the choices
+
+### What infrastructure would be required to support AI-enhanced functionality?
+
+- backend API with rate limiting and load balancing capabilities
+- CDN and analytics
+- designated AI services with fit-for-purpose infrastructure that allows for more bandwidth and bigger storage than a regular web API
+- caching layer
+
+### How would you ensure that any AI-generated content or recommendations are accurate and appropriate?
+
+- content filtering that would detect and filter out inappropriate text
+    - these can also be flagged by users via a report system
+- auditing of the AI generated suggestions
+- keep AI model up-to-date with the latest regulations and guidelines
+
